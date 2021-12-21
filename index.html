@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Calculator 1.0</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='assets/css/main.css'>
+</head>
+<body>
+    <main class="container">
+        <div class="calculadora">
+            <div class="header">
+                <h1>CALCULADORA</h1>
+                <input type="text"class="show"placeholder="0"disabled>
+            </div>
+            <div class="line row">
+                <button class="clear"onclick="calculo('C', 'operator')">C</button>
+                <button class="clean"onclick="calculo('CE', 'operator')">CE</button>
+                <button class="porcentagem"onclick="calculo('%', 'operator')">%</button>
+                <button class="divisao"onclick="calculo('/', 'operator')">&#247;</button>
+            </div>
+            <div class="line row">
+                <button id="number"onclick="calculo(7, 'number')">7</button>
+                <button id="number"onclick="calculo(8, 'number')">8</button>
+                <button id="number"onclick="calculo(9, 'number')">9</button>
+                <button id="multiplicacao"onclick="calculo('*', 'operator')">X</button>
+            </div>
+            <div class="line row">
+                <button id="number"onclick="calculo(4, 'number')">4</button>
+                <button id="number"onclick="calculo(5, 'number')">5</button>
+                <button id="number"onclick="calculo(6, 'number')">6</button>
+                <button id="subtracao"onclick="calculo('-', 'operator')">-</button>
+            </div>
+            <div class="line row">
+                <button id="number"onclick="calculo(1, 'number')">1</button>
+                <button id="number"onclick="calculo(2, 'number')">2</button>
+                <button id="number"onclick="calculo(3, 'number')">3</button>
+                <button id="adicao"onclick="calculo('+', 'operator')">+</button>
+            </div>
+            <div class="line row">
+                <button id="number"class="number"onclick="calculo(0, 'number')">0</button>
+                <button id="igual"onclick="calculo('=', 'operator')">=</button>
+            </div>
+            <div class="calc-footer">
+                <b class="authname">By: Sílvio Silva</b>
+            </div>
+        </div>
+    </main>
+
+      <script src='assets/js/main.js'></script>
+</body>
+</html>

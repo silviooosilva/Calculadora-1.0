@@ -1,0 +1,98 @@
+/*
+
+    Author: Sílvio Silva
+    20/12/2021
+
+*/
+@font-face {
+    font-family: 'Inter';
+    src: url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
+}
+*::after,
+*::before,
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter';
+    font-weight: 400;
+}
+.row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+body{
+    background-color: #ddd;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+.calculadora{
+    background-color: #141414;
+    width: 350px;
+    height: 580px;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 1px 1px 4px #151515;
+    color: #fff;
+}
+.header h1{
+    font-size: 13.5pt;
+    margin-top: 18px;
+    margin-left: 15px;
+}
+.header input{
+    margin-top: 40px;
+    margin-left: 30px;
+    width: 80%;
+    padding: 12px;
+    border: 0;
+    border-radius: 5px;
+    font-size: 13pt;
+    text-align: right;
+    box-shadow: 1px 1px 2px #fff;
+    color: #fff;
+    letter-spacing: 1.5px;
+
+}
+.header ::placeholder{
+    color: #fff;
+}
+.line{
+    margin-top: 30px;
+    justify-content: space-around;
+}
+.line button{
+    padding: 17px;
+    border: none;
+    border-radius: 100%;
+    cursor: pointer;
+    font-size: 10pt;
+    color: #fff;
+    background-color: #141414;
+    transition: .7s;
+}
+.line button:hover{
+    color: #ddd;
+    opacity: 70%;
+
+}
+.number{
+    margin-left: 37px;
+}
+#igual{
+    margin-right: -45px;
+}
+.authname{
+    color: rgb(233, 251, 130);
+    margin-left: 15px;
+    position: absolute;
+    bottom: 42px;
+    left: 720px;
+}
